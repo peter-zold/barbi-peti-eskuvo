@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Esküvő - Barbi és Peti</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header class="main-header">
+        <img src="images/header_left.png" class="header-img left" alt="Bal felső kép">
+        <img src="images/header_right.png" class="header-img right" alt="Jobb felső kép">
+        <div class="header-text">
+          <h1>Barbi és Peti</h1>
+          <p><em>2025. okt. 4.</em></p>
+          <p><em>Berkenye</em></p>
+        </div>
+    </header>
+  <nav class="navbar">
+    <!-- <ul>
+      <li><a href="#about" onclick="showSection('about')">Köszöntő</a></li>
+      <li><a href="#program" onclick="showSection('program')">Menetrend</a></li>
+      <li><a href="#rsvp" onclick="showSection('rsvp')">Visszajelzés</a></li>
+      <li><a href="#info" onclick="showSection('info')">Hasznos infók</a></li>
+    </ul> -->
+
+
+    <ul>
+      <li><a href="#" data-target="about">Köszöntő</a></li>
+      <li><a href="#" data-target="program">Menetrend</a></li>
+      <li><a href="#" data-target="rsvp">Visszajelzés</a></li>
+      <li><a href="#" data-target="info">Hasznos infók</a></li>
+    </ul>
+
+  </nav>
+
+  <main>
+
+    <!-- ez a welcome oldal -->
+
+    <section id="about" class="welcome-section">
+      <div class="welcome-container">
+        <div class="welcome-text">
+          <h2>Kedves Barátaink, Rokonaink!</h2>
+          <p>
+            Egy számunkra nagyon fontos nap közeleg, melyet szeretnénk Veletek együtt megünnepelni. 
+            <strong>2025. október 4-én, Berkenyén</strong> összekötjük az életünket, szeretettel meghívunk erre az alkalomra!
+          </p>
+          <p>
+            Ezen a honlapon megtekintheted a menetrendet, egyéb hasznos információkat olvashatsz, és kérünk, 
+            <strong>minél előbb töltsd ki a visszajelző űrlapot</strong>, hogy ezzel is segítsd a szervezést.
+          </p>
+          <p>
+            Mi már nagyon várjuk a napot, <strong>találkozunk októberben!</strong>
+          </p>
+          <p style="text-align: right; font-style: italic;">Barbi és Peti</p>
+        </div>
+        <div class="welcome-image">
+          <img src="images/welcome_img.jpg" alt="Üdvözlő kép" />
+        </div>
+      </div>
+    </section>
+
+<!-- ez a menetrend oldal -->
+
+    <section id="program" class="schedule-section">
+      <div class="schedule-intro">
+        <h2>Menetrend</h2>
+        <p>
+          Itt olvashatsz arról, hogy mi fog történni életünk nagy napján. Kérlek, az esküvő előtt közvetlenül mindenképp tekintsd meg,
+          hátha történt valamilyen apró változtatás, illetve itt fogjuk kihirdetni, hogy a rossz időre vonatkozó terv szerint haladunk-e.
+        </p>
+      </div>
+
+      <div class="schedule-grid-3col">
+        <!-- Bal oldal: időpontok -->
+        <div class="schedule-col times">
+          <div class="row">13:00</div>
+          <div class="row">13:45</div>
+          <div class="row">14:00</div>
+          <div class="row">14:45</div>
+          <div class="row compact-row">15:15</div>
+          <div class="row">16:30</div>
+          <div class="row">18:00</div>
+          <div class="row compact-row">20:00</div>
+          <div class="row compact-row">22:00</div>
+          <div class="row compact-row">24:00</div>
+        </div>
+
+        <!-- Középen: inda -->
+        <!-- <div class="schedule-col vine">
+          <img src="images/divider_long.png" alt="Díszítő inda">
+        </div> -->
+        
+      <div class="schedule-col vine">
+        <!-- Desktop image -->
+        <img src="images/divider_long2.png" alt="Díszítő inda" class="divider-img desktop-only">
+
+        <!-- Mobile images (will only display on small screens) -->
+        <div class="mobile-only multiple-divider">
+          <img src="images/divider.png" alt="Díszítő inda">
+          <img src="images/divider.png" alt="Díszítő inda">
+          <img src="images/divider.png" alt="Díszítő inda">
+        </div>
+      </div>
+
+        <!-- Jobb oldal: események -->
+        <div class="schedule-col events">
+          <div class="row">
+            Érkezés, vendégvárás a berkenyei plébániatemplom kertjében<br>
+            <span class="weather-alt">Rossz idő esetén a berkenyei Kultúrházban</span>
+          </div>
+          <div class="row">
+            Zenés menet a plébániakertből a Hársas-tóhoz<br>
+            <span class="weather-alt">Rossz idő esetén a Kultúrháztól a Szent Anna Fogadó Rendezvénytermébe</span>
+          </div>
+          <div class="row">
+            Polgári szertartás a Hársas-tónál<br>
+            <span class="weather-alt">Rossz idő esetén a Szent Anna Fogadó Rendezvénytermében</span>
+          </div>
+          <div class="row">
+            Zenés menet a berkenyei Szent Kereszt Felmagasztalása plébániatemplomba
+          </div>
+          <div class="row compact-row">
+            Nászmise
+          </div>
+          <div class="row">
+            Csoportos fotózás, gratulációk, agapé a plébániakertben<br>
+            <span class="weather-alt">Rossz idő esetén a Kultúrházban</span>
+          </div>
+          <div class="row">
+            Vacsora és lakodalom a Szent Anna Fogadó Rendezvénytermében
+          </div>
+          <div class="row compact-row">
+            Nyitótánc, buli kezdete
+          </div>
+          <div class="row compact-row">
+            Menyasszonytánc, torta
+          </div>
+          <div class="row compact-row">
+            Éjféli vacsora
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="rsvp" class="feedback-section">
+      <div class="feedback-container">
+
+        <div class="feedback-intro">
+          <h2>Visszajelzés</h2>
+          <p>Kérlek, töltsd ki az alábbi űrlapot, hogy ezzel is segítsd a szervezést!</p>
+        </div>
+        
+        <div class="form-container">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdyn1oGBikLEUGJ0GViMxNN8Bi2W1TevYYZsBXN_6PF1ZIPVQ/viewform?embedded=true" width="640" height="782" frameborder="0" marginheight="0" marginwidth="0">Betöltés…</iframe>
+
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+
+      <!-- <h2>Hasznos infók</h2>
+
+      <h3>Térkép</h3>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1OQE6k2jNLYZu06hIgZGpFVquhU3vN6s&ehbc=2E312F" width="640" height="480"></iframe>
+      </div>
+    </section>
+    <section id="info" class="info-section"> -->
+
+    <!-- 1. További információk -->
+    <section id="info" class="info-section">
+      <div class="info-grid">
+        
+        <!-- További információk -->
+        <div class="info-block">
+          <h2>További információk</h2>
+          <p>Hasznos tudnivalók az esküvővel kapcsolatban: öltözködés, ajándék stb.</p>
+        </div>
+
+        <!-- Elválasztó -->
+        <div class="divider-container">
+          <img src="images/divider_long2.png" alt="Elválasztó" class="divider desktop-only">
+          <img src="images/divider_horizontal.png" alt="Elválasztó" class="divider mobile-only">
+        </div>
+
+        <!-- Szállás -->
+        <div class="info-block">
+          <h2>Szállás</h2>
+          <p>A szállások foglalását a visszajelző űrlap, illetve személyes egyeztetés alapján intézzük</p>
+          <p>A következő szálláshelyeket javasoljuk:</p>
+          <p>
+            <a href="https://berkenyepanzio.hu/" target="_blank" rel="noopener noreferrer">
+              Szent Anna Fogadó
+            </a> (Berkenye): 9900 Ft/fő
+          </p>
+          <p>
+            <a href="http://nogradinagyboldogasszony.hu/apartman" target="_blank" rel="noopener noreferrer">
+              Jó Pásztor Apartmanház
+            </a> (Nógrád): 8300 Ft/fő
+          </p>
+        </div>
+
+        <!-- Elválasztó -->
+        <div class="divider-container">
+          <img src="images/divider_long2.png" alt="Elválasztó" class="divider desktop-only">
+          <img src="images/divider_horizontal.png" alt="Elválasztó" class="divider mobile-only">
+        </div>
+
+        <!-- Térkép -->
+        <div class="info-block">
+          <h2>Megközelítés</h2>
+          <!-- <p>Autóval Budapestről az M2-esen (legalább Pest megyei autópálya matrica szükséges)</p>
+          <p>Vonattal a Nyugatitól a Z70-sel (minden óra 8-kor indul), majd Vácról az S750-nel (minden óra 38-kor indul, következő óra 12-kor érkezik meg)</p>
+          <p>Busszal Újpest-városkaputól a 1010-es busszal, majd Szendehely - Ált. iskolától-tól a 331-es busszal</p>
+          <p>A visszajelző űrlap alapján igyekszünk telekocsis rendszerrel segíteni az eljutást</p> -->
+          <ul class="travel-list">
+            <li class="icon-car">
+              <span class="travel-icon-wrapper">
+                <img src="images/car.png" alt="Autó" class="travel-icon">
+              </span>
+              Autóval Budapestről az M2-esen (legalább Pest megyei autópálya matrica szükséges)
+            </li>
+            <li class="icon-train">
+              <span class="travel-icon-wrapper">
+                <img src="images/train.png" alt="Autó" class="travel-icon">
+              </span>
+              Vonattal a Nyugatitól a Z70-sel (minden óra 8-kor indul), majd Vácról az S750-sel (minden óra 38-kor indul, következő óra 12-kor érkezik meg)
+            </li>
+            <li class="icon-bus">
+              <span class="travel-icon-wrapper">
+                <img src="images/bus.png" alt="Autó" class="travel-icon">
+              </span>
+              Busszal Újpest-városkaputól a 1010-es busszal, majd Szendehely, Általános iskolától a 331-es busszal
+            </li>
+            <li class="icon-carpool">
+              <span class="travel-icon-wrapper">
+                <img src="images/people.png" alt="Autó" class="travel-icon">
+              </span>
+              A visszajelző űrlap alapján igyekszünk telekocsis rendszerrel segíteni az eljutást
+            </li>
+          </ul>
+          <div class="map-container">
+            <iframe
+              src="https://www.google.com/maps/d/u/0/embed?mid=1OQE6k2jNLYZu06hIgZGpFVquhU3vN6s&ehbc=2E312F"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Barbi és Peti</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
