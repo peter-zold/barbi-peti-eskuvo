@@ -106,6 +106,7 @@
       text-align: center;
       color: #333;
       margin-bottom: 0; /* plusz biztosítás */
+      z-index: 3;
     }
 
     .header-text h1 {
