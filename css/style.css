@@ -218,39 +218,73 @@
   padding: 1rem;
 }
 
-.welcome-container {
+/* .welcome-container {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   align-items: flex-start;
   justify-content: center;
+} */
+
+.welcome-container {
+  display: flex;
+  flex-wrap: nowrap;              /* Ne törjön sort */
+  align-items: center;            /* >>> Vertikálisan középre a kép és a szöveg */
+  justify-content: space-between;
+  gap: 2rem;
 }
 
-.welcome-text {
+/* .welcome-text {
   flex: 2 1 60%;
   max-width: 100%;
-  padding-right: 3rem; /* nagyobb jobb oldali padding */
+  min-width: 200px;
+  padding-right: 3rem; 
+} */
+
+.welcome-text {
+  flex: 1 1 55%;         /* engedi a szűkülést */
+  min-width: 0;           /* ne tartsa magát szélesen */
+  padding-right: 2rem;
 }
 
-.welcome-image {
+/* .welcome-image {
   flex: 1 1 30%;
+  min-width: 200px; 
   max-width: 100%;
-  padding: 1.5rem; /* minden oldalra nagyobb padding */
+  padding: 1.5rem; 
   display: flex;
   justify-content: center;
   align-items: flex-start;
+} */
+
+.welcome-image {
+  flex: 0 1 45%;                  /* Használja a rendelkezésre álló hely 30%-át, ha lehet */
+  max-width: 350px;              /* Ne legyen túl nagy */
+  min-width: 180px;              /* De ne legyen túl kicsi sem */
+  display: flex;
+  justify-content: center;
+  align-items: center;           /* Kép középre igazítása konténeren belül */
+  padding: 1rem;
 }
 
 .welcome-image img {
-  max-width: 100%;
+  width: 100%;                   /* Töltse ki a rendelkezésre álló helyet */
   height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   object-fit: contain;
 }
 
+/* .welcome-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  object-fit: contain;
+} */
+
 /* Mobil nézet */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .welcome-container {
     flex-direction: column;
     align-items: stretch;
@@ -258,15 +292,43 @@
 
   .welcome-text {
     flex: 1 1 100%;
-    padding-right: 1rem; /* kisebb padding mobilon */
+    padding-right: 1rem; 
   }
 
   .welcome-image {
     flex: 1 1 100%;
-    padding: 1rem; /* kisebb padding mobilon is */
+    padding: 1rem; 
     margin-top: 1rem;
   }
+} */
+@media (max-width: 768px) {
+  .welcome-container {
+    flex-direction: column;
+    align-items: stretch; /* nem kell center, így teljes szélesség */
+  }
+
+  .welcome-text {
+    flex: 1 1 100%;
+    padding-right: 1rem;
+  }
+
+  .welcome-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* <<< EZ FONTOS lehet optikai korrekciónak */
+    padding: 0rem;
+    margin-top: 0rem;
+  }
+
+  .welcome-image img {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* <<< EZ IS fontos lehet, ha flex nem elég */
+  }
 }
+
 
 /* menetrend rész */
 
@@ -508,7 +570,7 @@
 
 /* Elválasztó képek */
 .divider {
-  height: 570px; /* nagyobb magasság */
+  height: 590px; /* nagyobb magasság */
   object-fit: cover; /* a kép kitölti a dobozt, levág, ha szükséges */
   width: 100%;
   padding-top: 1rem;
