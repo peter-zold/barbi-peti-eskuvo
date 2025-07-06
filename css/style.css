@@ -244,7 +244,7 @@
 .welcome-text {
   flex: 1 1 55%;         /* engedi a szűkülést */
   min-width: 0;           /* ne tartsa magát szélesen */
-  padding-right: 2rem;
+  padding-right: 4rem;
 }
 
 /* .welcome-image {
@@ -259,12 +259,15 @@
 
 .welcome-image {
   flex: 0 1 45%;                  /* Használja a rendelkezésre álló hely 30%-át, ha lehet */
-  max-width: 400px;              /* Ne legyen túl nagy */
+  max-width: 450px;              /* Ne legyen túl nagy */
   min-width: 180px;              /* De ne legyen túl kicsi sem */
   display: flex;
   justify-content: center;
   align-items: center;           /* Kép középre igazítása konténeren belül */
-  padding: 1rem;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
 }
 
 .welcome-image img {
