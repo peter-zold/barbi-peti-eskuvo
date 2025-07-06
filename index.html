@@ -8,12 +8,14 @@
   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <header class="main-header">
         <img src="images/header_left.png" class="header-img left" alt="Bal felső kép">
+        <img src="images/header_top.png" class="header-img top desktop-only" alt="Boltív közép">
         <img src="images/header_right.png" class="header-img right" alt="Jobb felső kép">
         <div class="header-text">
           <h1>Barbi és Peti</h1>
@@ -103,9 +105,9 @@
 
         <!-- Mobile images (will only display on small screens) -->
         <div class="mobile-only multiple-divider">
-          <img src="images/divider.png" alt="Díszítő inda">
-          <img src="images/divider.png" alt="Díszítő inda">
-          <img src="images/divider.png" alt="Díszítő inda">
+          <img src="images/divider_long.png" alt="Díszítő inda">
+          <img src="images/divider_long.png" alt="Díszítő inda">
+          <!-- <img src="images/divider.png" alt="Díszítő inda"> -->
         </div>
       </div>
 
@@ -143,7 +145,7 @@
             Menyasszonytánc, torta
           </div>
           <div class="row compact-row">
-            Éjféli vacsora
+            Éjféli vacsora és mulatozás kifulladásig
           </div>
         </div>
       </div>
@@ -183,7 +185,19 @@
         <!-- További információk -->
         <div class="info-block">
           <h2>További információk</h2>
-          <p>Hasznos tudnivalók az esküvővel kapcsolatban: öltözködés, ajándék stb.</p>
+          <!-- <p></p> -->
+            <ul class="travel-list">
+            <li class="icon-car">
+              <span class="travel-icon-wrapper">
+                <img src="images/gift.png" alt="Ajándék" class="travel-icon">
+              </span>
+              Úgy érezzük, hogy mindenünk megvan a közös élet elkezdéséhez.
+               Ha mégis szeretnél valami kézzelfoghatóval kedveskedni,
+                egy apró, személyes emléket - például egy képeslapot vagy jókívánságot az emlékkönyvbe
+                 - örömmel fogadunk. Vagy ha mégis valami ajándéktárgyon töröd a fejed, boldogan vesszük, csak kérünk, egyeztess velünk előtte.
+            </li>
+            </ul>
+        
         </div>
 
         <!-- Elválasztó -->
@@ -233,7 +247,7 @@
               <span class="travel-icon-wrapper">
                 <img src="images/train.png" alt="Autó" class="travel-icon">
               </span>
-              Vonattal a Nyugatitól a Z70-sel (minden óra 8-kor indul), majd Vácról az S750-sel (minden óra 38-kor indul, következő óra 12-kor érkezik meg)
+              Vonattal a Nyugati pályaudvarról a Z70-es zónázó vonattal (minden óra 8-kor indul) Vácig, majd Vácról az S750-es személyvonattal (minden óra 38-kor indul, következő óra 12-kor érkezik meg)
             </li>
             <li class="icon-bus">
               <span class="travel-icon-wrapper">
@@ -241,12 +255,12 @@
               </span>
               Busszal Újpest-városkaputól a 1010-es busszal, majd Szendehely, Általános iskolától a 331-es busszal
             </li>
-            <li class="icon-carpool">
+            <!-- <li class="icon-carpool">
               <span class="travel-icon-wrapper">
                 <img src="images/people.png" alt="Autó" class="travel-icon">
               </span>
               A visszajelző űrlap alapján igyekszünk telekocsis rendszerrel segíteni az eljutást
-            </li>
+            </li> -->
           </ul>
           <div class="map-container">
             <iframe

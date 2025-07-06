@@ -1,10 +1,11 @@
   body {
       margin: 0;
       /*font-family: 'Lobster Two', sans-serif;*/
-      font-family: 'Playball', sans-serif;
+      /* font-family: 'Playball', sans-serif; */
+      font-family: 'EB Garamond', sans-serif;
       /* font-family: 'Great Vibes', sans-serif; */
       /* font-family: 'Edu NSW ACT Cursive', sans-serif; */
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       background-color: #fcfffa;
       color: #333;
       padding: 0;
@@ -24,17 +25,19 @@
   /* Bal és jobb sarok képek */
   .header-img {
     position: absolute;
-    width: 150px;
+    width: 44vw;
     height: auto;
     top: 0;
   }
   
   .header-img.left {
     left: 0;
+    z-index: 2;
   }
   
   .header-img.right {
     right: 0;
+    z-index: 2;
   }
   
   /* Szöveg formázása */
@@ -63,11 +66,70 @@
     font-style: italic;
     font-family: 'Great Vibes', cursive;
   }
+
+  .header-img.top {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 21vw; /* vagy amekkora jól mutat */
+  height: auto;
+  z-index: 1;
+  }
+
+  /* Csak desktopon jelenik meg */
+  .desktop-only {
+    display: block;
+  }
+
+  @media (max-width: 769px) {
+      .main-header {
+        position: relative;
+        height: 200px;
+        background-color: #fcfffa;
+        overflow: hidden;
+        padding-bottom: 0; /* ha van */
+        margin-bottom: 0;  /* adjuk hozzá, ha nincs */
+      }
+
+    .header-img {
+        position: absolute;
+        width: 50vw;
+        height: auto;
+        top: 0;
+      }
+
+    .header-text {
+      position: absolute;
+      bottom: 15%; /* kb. alsó egyharmad */
+      width: 100%;
+      text-align: center;
+      color: #333;
+      margin-bottom: 0; /* plusz biztosítás */
+    }
+
+    .header-text h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      font-family: 'Great Vibes', cursive;
+    }
+    
+    .header-text p {
+      font-size: 1.4rem;
+      margin: 0.2rem 0;
+      font-style: italic;
+      font-family: 'Great Vibes', cursive;
+    }
+
+      .desktop-only {
+      display: none !important;
+    }
+  }
   
   .navbar {
-    background-color: #16874f;
+    /* background-color: #16874f; */
     /* opacity: 90%; */
-    /* background-color: rgb(0,102,0); */
+    background-color: rgb(0,102,0);
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -93,7 +155,7 @@
   
   .navbar a {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     color: white;
     font-weight: bold;
   }
@@ -321,7 +383,7 @@
   .schedule-grid-3col {
     grid-template-columns: 60px 40px 1fr;
     gap: 0.5rem;
-    padding: 0 0.3rem;
+    padding: 0 0.2rem;
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;
@@ -332,18 +394,22 @@
   }
 
   .schedule-col .row {
-    min-height: 4.15rem;
+    min-height: 4.2rem;
     /* padding: 0.8rem 0; */
     display: flex;
     /* align-items: center; */
     text-align: left;
+    padding-bottom: 0.2rem;
+    padding-top: 0.2rem;
     justify-content: center;      /* függőleges közép */
     align-items: flex-start;      /* vízszintes balra */
   }
 
   .schedule-col.times {
-    min-height: 4.6rem;
+    min-height: 4.3rem;
     font-size: 0.9rem;
+    padding-bottom: 0.1rem;
+    padding-top: 0.1rem;
     padding-right: 0.3rem;
     text-align: right;
     align-items: flex-end; 
@@ -356,11 +422,13 @@
   }
 
   .schedule-col.events {
-    min-height: 4.6rem;
+    min-height: 4.3rem;
     font-size: 0.9rem;
     /* align-items: center; */
     align-items: flex-start;
     text-align: left;
+    padding-bottom: 0rem;
+    padding-top: 0rem;
   }
 
   .desktop-only {
@@ -371,17 +439,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
-    height: 100%; /* optional if parent is sized */
+    gap: 0rem;
+    height: 90%; /* optional if parent is sized */
   }
 
   .mobile-only img {
     width: auto;
     height: auto;
-    max-width: 100%;
+    max-width: 90%;
     object-fit: contain;
     display: block;
-    margin: 1rem 0;
+    margin: 0rem 0;
   }
 
   .schedule-col.vine {
@@ -392,7 +460,9 @@
   }
 
   .multiple-divider img {
-  margin-bottom: 0.2rem;
+  margin-bottom: 0rem;
+  max-width: 90%;
+  height: 90%;
 }
 }
 
@@ -403,7 +473,7 @@
   box-sizing: border-box;
   max-width: 1500px;
   margin: 0 auto;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
 }
 
 .info-grid {
@@ -438,7 +508,7 @@
 
 /* Elválasztó képek */
 .divider {
-  height: 620px; /* nagyobb magasság */
+  height: 570px; /* nagyobb magasság */
   object-fit: cover; /* a kép kitölti a dobozt, levág, ha szükséges */
   width: 100%;
   padding-top: 1rem;
@@ -488,10 +558,27 @@
     margin: 0.25rem 0; /* kisebb margó, kevés tér */
   }
 
-  .divider {
-    max-height: 80px; /* mobilon kisebb */
-    margin: 0.5rem 0; /* biztos ami biztos */
+
+  .divider-container {
+    display: flex;
+    justify-content: center; /* vízszintesen középre */
+    align-items: center;     /* függőlegesen középre, ha kell */
   }
+
+  .divider.mobile-only {
+    max-height: 80px;
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    opacity: 0.5;
+    display: block;
+  }
+  /* .divider {
+    max-height: 80px;
+    margin: 0.5rem 0;
+  } */
+
+
 
   .info-block {
     margin-bottom: 0.5rem; /* ha kell távolság az alá kerülő elválasztóhoz */
@@ -513,7 +600,7 @@
 }
 
 .feedback-intro {
-  max-width: 640px;
+  max-width: 740px;
   margin: 0 auto 1.5rem auto; /* középre és alsó margó */
   text-align: center;
 }
