@@ -259,7 +259,7 @@
 
 .welcome-image {
   flex: 0 1 45%;                  /* Használja a rendelkezésre álló hely 30%-át, ha lehet */
-  max-width: 350px;              /* Ne legyen túl nagy */
+  max-width: 400px;              /* Ne legyen túl nagy */
   min-width: 180px;              /* De ne legyen túl kicsi sem */
   display: flex;
   justify-content: center;
